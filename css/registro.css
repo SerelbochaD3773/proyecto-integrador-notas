@@ -4,7 +4,7 @@ body {
     padding: 0;
     background-image: url('universidad del futuro.png');
     background-size: cover;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -12,8 +12,10 @@ body {
 .container {
     width: 100%;
     max-width: 400px;
-    background: rgba(252, 251, 251, 0.9);
+    background: rgba(242, 238, 245, 0.9);
     padding: 20px;
+    background-image: url('universidad del futuro.png');
+    background-size: cover;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -48,7 +50,7 @@ button:hover {
     background-color: #0056b3;
 }
 .footer {
-    text-align: center;
+    text-align: ;
     margin-top: 20px;
 }
 .footer a {

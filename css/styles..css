@@ -1,23 +1,33 @@
+
+
+
 .header {
     background-color: #f9f9fc;    
     margin: 0%;
-    padding: 0 ; 
-    display: block;
+    padding: 0; 
+    display: inline-flex;
+    justify-content: right;
+        
     text-align: center;
     width: 100%;
-    height: 7.7em;
+    height: 8em;
+    align-items: center;
+    right: 3px;
+
 }
 .header__a {
     color: #00B785;
-    text-decoration: none;
+    text-decoration: none;    
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
 .header__img {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    
-
+    align-items: center;
+    right: 2px;
 }
 
  body {
@@ -41,8 +51,8 @@ main{
 .main__nav {
     background-color: #6360E5;
     padding: 18px ;
-    text-align: center;
-    margin: 7px #00b785;
+    text-align: right;
+    margin: 9% #00b785;
 }
 
 .main__nav--ul {
@@ -81,8 +91,73 @@ main{
     color: #858480;
 }
  
+  /* Sección Hero */
+  .hero {
+    width: 100%;
+    height: 100%;
+    background-image: url() no-repeat center/cover;
+    color: #eeeaea;
+    text-align: center;
+    padding: 6rem 1rem;
+    position: relative;
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.7);
+  }
+  .hero-content {
+    position: relative; z-index: 1;
+    max-width: 700px; margin: auto;
+  }
+  .hero h1 { font-size: 2.5rem; margin-bottom: 1rem; }
+  .hero p { font-size: 1.1rem; margin-bottom: 2rem; }
+  .hero button {
+    background: #00B785;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    transition: background 0.3s;
+  }
+  .hero button:hover { background: #2db4e9; }
 
-    
-    
-    
+  /* Sección Beneficios */
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 4rem 0; }
+  .feature {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .feature h3 { margin-bottom: 1rem; color: #4a90e2; }
 
+  /* Sección Testimonial */
+  .testimonial {
+    background: #fff;
+    border-left: 5px solid #4a90e2;
+    padding: 2rem;
+    margin: 4rem 0;
+    font-style: italic;
+  }
+  .testimonial p { margin-bottom: 1rem; }
+  .testimonial span { font-weight: bold; color: #333; }
+
+  /* CTA final */
+  .cta { background: #636669; color: #fff; text-align: center; padding: 3rem 1rem; border-radius: 10px; }
+  .cta h2 { font-size: 2rem; margin-bottom: 1rem; }
+  .cta button {
+    background: #00B785;
+    color: #fff;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    transition: background 0.9s;
+  }
+  .cta button:hover { background: #ee5253; }
+
+  /* Footer */
+  footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #777; }
+</style>

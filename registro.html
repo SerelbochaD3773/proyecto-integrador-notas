@@ -35,6 +35,16 @@
 
         <h2>Inicio de Sesión</h2>
         <form action="pagina_cliente.html" method="post">
+            
+            <label for="tipoCliente">Tipo de Cliente:</label>
+            <select id="tipoCliente" name="tipoCliente" required>
+                <option value="">Selecciona una opción</option>
+                <option value="institucion">Institución Educativa</option>
+                <option value="profesor">Profesor</option>
+                <option value="alumno">Alumno</option> 
+            </select>
+
+
             <label for="emailLogin">Correo Electrónico:</label>
             <input type="email" id="emailLogin" name="emailLogin" required>
 
