@@ -1,4 +1,12 @@
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;    
+  
+}
 
 
 .header {
@@ -7,13 +15,12 @@
     padding: 0; 
     display: flex;
     flex-direction: row;
-    justify-content: right;
-        
+    justify-content: right;        
     text-align: center;
     width: 100%;
-    height: 8em;
+    height: 7em;
     align-items: center;
-    right: 3px;
+    
 
 }
 .header__a {
@@ -34,16 +41,16 @@
  body {
     font-family: Helvetica;
     margin: 0;
-    background-color: #f5f7f5f5;
+    background-color: #6360E5;
     padding: 0%;
 }
 
 main{
     font-family: arial, sans-serif;
-    margin: 0.1em;
+    margin: 0.05em;
     padding: 0.3em;
     background-color: #00B785;    
-    border: 0 em;
+    border: 0 ;
 
  }
 
@@ -51,9 +58,9 @@ main{
 
 .main__nav {
     background-color: #6360E5;
-    padding: 18px ;
+    padding: 1px ;
     text-align: right;
-    margin: 9% #00b785;
+    margin: 0.5em ;
 }
 
 .main__nav--ul {
@@ -95,14 +102,13 @@ main{
   /* Sección Hero */
   .hero {
     width: 100%;
-    height: 100%;
-    background-image: url() no-repeat center/cover;
+    height: 100%;    
     color: #eeeaea;
     text-align: center;
     padding: 6rem 1rem;
     position: relative;
   }
-  .hero::after {
+  .hero__after {
     content: '';
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -119,7 +125,7 @@ main{
     color: #fff;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
-    border-radius: 50px;
+    border-radius: 10px;
     transition: background 0.3s;
   }
   .hero button:hover { background: #eea175; }
@@ -127,7 +133,7 @@ main{
   /* Sección Beneficios */
   .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin: 4rem 0; }
   .feature {
-    background: #f9f9f9;
+    background: #f7f3f3;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -154,11 +160,11 @@ main{
     color: #fff;
     padding: 1rem 2rem;
     font-size: 1.1rem;
-    border-radius: 50px;
-    transition: background 0.9s;
+    border-radius: 10px;
+    transition:  0.1s;
   }
   .cta button:hover { background: #eea175; }
 
   /* Footer */
-  footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #777; }
+  footer { text-align: center; padding: 1rem 0; font-size: 0.9rem; color: #fdf7f7; }
 </style>
